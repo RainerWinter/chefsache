@@ -1,1 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CHEF.Sache – Afterwork for Leaders</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    body {
+      background-color: #0f1923;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0a1218;
+      padding: 48px 24px 40px;
+      text-align: center;
+      border-bottom: 3px solid #c8702a;
+    }
+
+    header .label {
+      font-size: 0.85rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #c8702a;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.05em;
+    }
+
+    header h1 span {
+      color: #c8702a;
+    }
+
+    header p {
+      margin-top: 16px;
+      font-size: 1.1rem;
+      color: #a0b0b8;
+      max-width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .meta-bar {
+      background-color: #162028;
+      text-align: center;
+      padding: 16px 24px;
+      font-size: 0.95rem;
+      color: #c8702a;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid #1e2f3a;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+
+    .card {
+      background-color: #162028;
+      border: 1px solid #1e2f3a;
+      border-radius: 8px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover {
+      border-color: #c8702a;
+    }
+
+    .card .month {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c8702a;
+      margin-bottom: 6px;
+    }
+
+    .card .date {
+      font-size: 0.9rem;
+      color: #6a8a9a;
+      margin-bottom: 14px;
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #8aa0aa;
+      flex-grow: 1;
+      margin-bottom: 24px;
+    }
+
+    .card a.btn {
+      display: block;
+      text-align: center;
+      background-color: #c8702a;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: background-color 0.2s;
+    }
+
+    .card a.btn:hover {
+      background-color: #e08030;
+    }
+
+    .card a.btn.disabled {
+      background-color: #2a3a44;
+      color: #4a6070;
+      pointer-events: none;
+      cursor: default;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 0.85rem;
+      color: #3a5060;
+      border-top: 1px solid #1e2f3a;
+      margin-top: 24px;
+    }
+
+    footer a {
+      color: #c8702a;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="label">Afterwork for Leaders</div>
+  <h1>CHEF.<span>Sache</span></h1>
+  <p>90 Minuten. Impulse, Austausch, Klarheit. Für Führungskräfte, die ihren Job wirklich gut machen wollen.</p>
+</header>
+
+<div class="meta-bar">
+  Dienstags · 18:00 – 19:30 Uhr · Straubing · max. 12 Teilnehmer
+</div>
+
+<div class="grid">
+
+  <!-- April 2026 -->
+  <div class="card">
+    <div>
+      <div class="month">April 2026</div>
+      <div class="date">Di, 14. April 2026</div>
+      <h2>Warum Führung heute anders funktioniert</h2>
+      <p>Was hat sich verändert – und warum reichen alte Führungsrezepte nicht mehr? Ein ehrlicher Blick auf das neue Führungsverständnis.</p>
+    </div>
+    <a class="btn" href="ANMELDELINK_APRIL_2026" target="_blank">Jetzt Platz sichern</a>
+  </div>
+
+  <!-- Mai 2026 -->
+  <div class="card">
+    <div>
+      <div class="month">Mai 2026</div>
+      <div class="date">Di, 12. Mai 2026</div>
+      <h2>Haltung entscheidet – Werte in der Führung</h2>
+      <p>Wer bin ich als Führungskraft – und wofür stehe ich? Eigene Werte klären und im Alltag spürbar machen.</p>
+    </div>
+    <a class="btn" href="ANMELDELINK_MAI_2026" target="_blank">Jetzt Platz sichern</a>
+  </div>
+
+  <!-- Juni 2026 -->
+  <div class="card">
+    <div>
+      <div class="month">Juni 2026</div>
+      <div class="date">Di, 9. Juni 2026</div>
+      <h2>Ziele, die wirklich wirken</h2>
+      <p>Wie setzt man Ziele, die motivieren statt zu lähmen? Vom Zahlenfriedhof zur echten Orientierung.</p>
+    </div>
+    <a class="btn" href="ANMELDELINK_JUNI_2026" target="_blank">Jetzt Platz sichern</a>
+  </div>
+
+  <!-- Juli 2026 -->
+  <div class="card">
+    <div>
+      <div class="month">Juli 2026</div>
+      <div class="date">Di, 14. Juli 2026</div>
+      <h2>Entscheiden unter Druck</h2>
+      <p>Wie treffe ich gute Entscheidungen, wenn die Zeit drängt und die Datenlage dünn ist? Entscheidungsqualität im Führungsalltag.</p>
+    </div>
+    <a class="btn" href="ANMELDELINK_JULI_2026" target="_blank">Jetzt Platz sichern</a>
+  </div>
+
+  <!-- August 2026 -->
+  <div class="card">
+    <div>
+      <div class="month">August 2026</div>
+      <div class="date">Di, 11. August 2026</div>
+      <h2>Delegieren – aber richtig</h2>
+      <p>Warum landet trotzdem alles auf dem eigenen Schreibtisch? Delegation, die wirklich funktioniert – ohne Kontrollverlust.</p>
+    </div>
+    <a class="btn" href="ANMELDELINK_AUGUST_2026" target="_blank">Jetzt Platz sichern</a>
+  </div>
+
+  <!-- September 2026 -->
+  <div class="card">
+    <div>
+      <div class="month">September 2026</div>
+      <div class="date">Di, 8. September 2026</div>
+      <h2>Gespräche, die etwas bewegen</h2>
+      <p>Mitarbeitergespräche, die nicht nach Schema F ablaufen – sondern echte Veränderung anstoßen.</p>
+    </div>
+    <a class="btn" href="ANMELDELINK_SEPTEMBER_2026" target="_blank">Jetzt Platz sichern</a>
+  </div>
+
+  <!-- Oktober 2026 -->
+  <div class="card">
+    <div>
+      <div class="month">Oktober 2026</div>
+      <div class="date">Di, 13. Oktober 2026</div>
+      <h2>Teams, die mitdenken</h2>
+      <p>Wie entsteht eine Kultur, in der Mitarbeiter Verantwortung übernehmen – ohne dass man sie ständig daran erinnern muss?</p>
+    </div>
+    <a class="btn" href="ANMELDELINK_OKTOBER_2026" target="_blank">Jetzt Platz sichern</a>
+  </div>
+
+  <!-- November 2026 -->
+  <div class="card">
+    <div>
+      <div class="month">November 2026</div>
+      <div class="date">Di, 10. November 2026</div>
+      <h2>Konflikte lösen, bevor sie eskalieren</h2>
+      <p>Spannungen im Team früh erkennen und konstruktiv ansprechen – ohne Drama, ohne Schaden.</p>
+    </div>
+    <a class="btn" href="ANMELDELINK_NOVEMBER_2026" target="_blank">Jetzt Platz sichern</a>
+  </div>
+
+  <!-- Dezember 2026 -->
+  <div class="card">
+    <div>
+      <div class="month">Dezember 2026</div>
+      <div class="date">Di, 8. Dezember 2026</div>
+      <h2>Das Jahr als Führungskraft reflektieren</h2>
+      <p>Was hat funktioniert, was nicht? Ein strukturierter Jahresrückblick – und der Blick nach vorne.</p>
+    </div>
+    <a class="btn" href="ANMELDELINK_DEZEMBER_2026" target="_blank">Jetzt Platz sichern</a>
+  </div>
+
+  <!-- Januar 2027 -->
+  <div class="card">
+    <div>
+      <div class="month">Januar 2027</div>
+      <div class="date">Di, 12. Januar 2027</div>
+      <h2>Loslassen als Führungsstärke</h2>
+      <p>Warum das Festhalten an Kontrolle Teams schwächt – und wie echtes Vertrauen Führung leichter macht.</p>
+    </div>
+    <a class="btn disabled" href="#">Anmeldung folgt</a>
+  </div>
+
+  <!-- Februar 2027 -->
+  <div class="card">
+    <div>
+      <div class="month">Februar 2027</div>
+      <div class="date">Di, 9. Februar 2027</div>
+      <h2>Resilienz – standhaft ohne abzustumpfen</h2>
+      <p>Wie bleibe ich als Führungskraft belastbar, ohne mich zu verbiegen? Stabilität, die aus Klarheit entsteht.</p>
+    </div>
+    <a class="btn disabled" href="#">Anmeldung folgt</a>
+  </div>
+
+  <!-- März 2027 -->
+  <div class="card">
+    <div>
+      <div class="month">März 2027</div>
+      <div class="date">Di, 9. März 2027</div>
+      <h2>Führung im Wandel</h2>
+      <p>Veränderungen gestalten statt verwalten – wie Führungskräfte ihr Team durch Unsicherheit navigieren.</p>
+    </div>
+    <a class="btn disabled" href="#">Anmeldung folgt</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>CHEF.Sache ist ein Format der <a href="https://winterfest.academy" target="_blank">Winterfest Academy</a> · <a href="https://winterfest.academy/impressum" target="_blank">Impressum</a></p>
+</footer>
+
+</body>
+</html>
