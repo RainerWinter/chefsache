@@ -2,19 +2,21 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CHEF.Sache – Afterwork for Leaders | WINTERFEST Leadership Academy</title>
-  <link rel="stylesheet" href="fonts/inter-fontface.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --navy:   #1a2232;
-      --navy2:  #0f1824;
+      --navy: #1a2232;
+      --navy2: #0f1824;
       --orange: #f97316;
-      --white:  #ffffff;
-      --light:  #f4f6f9;
-      --text:   #2c3e50;
-      --muted:  #64748b;
+      --white: #ffffff;
+      --light: #f4f6f9;
+      --text: #2c3e50;
+      --muted: #64748b;
       --border: #e2e8f0;
     }
     body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text); font-size: 16px; line-height: 1.6; }
@@ -56,6 +58,8 @@
     .card-date { font-size: 0.85rem; color: var(--muted); margin-bottom: 14px; }
     .card h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
     .card p { font-size: 0.875rem; color: var(--muted); line-height: 1.65; flex: 1; margin-bottom: 20px; }
+    .card-takeaway { font-size: 0.78rem; color: var(--navy); background: var(--light); border-left: 3px solid var(--orange); padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 16px; line-height: 1.5; }
+    .card-takeaway strong { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--orange); margin-bottom: 3px; }
     .card a.btn { display: block; text-align: center; background: var(--orange); color: var(--white); text-decoration: none; padding: 11px 20px; border-radius: 6px; font-size: 0.88rem; font-weight: 700; letter-spacing: 0.03em; transition: background .2s; }
     .card a.btn:hover { background: #ea6a0a; }
     .card a.btn.disabled { background: var(--light); color: var(--muted); pointer-events: none; border: 1px solid var(--border); }
@@ -93,18 +97,19 @@
 <!-- HEADER -->
 <header>
   <a href="https://winterfest.academy" class="logo-wrap">
-    <img class="logo-icon" src="Winterfest-Leadership-Academy-2-g.png" alt="WINTERFEST Leadership Academy">
+    <img src="Winterfest-Leadership-Academy-2-g.png" alt="WINTERFEST Leadership Academy" class="logo-icon" />
   </a>
   <nav>
     <a href="https://winterfest.academy/programme">Programme</a>
     <a href="https://winterfest.academy/events">Events</a>
-    <a href="https://winterfest.academy/kontakt" class="cta-nav">Kontakt</a>
+    <a href="https://winterfest.academy/kontakt">Kontakt</a>
+    <a href="https://zeeg.me/winterfest/Potenzialgespraech" class="cta-nav">Gespräch buchen</a>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="eyebrow">Afterwork for Leaders</div>
+  <span class="eyebrow">Afterwork for Leaders</span>
   <h1>CHEF.<em>Sache</em></h1>
   <p class="lead">Ein Abend für Führungskräfte im Mittelstand – ehrlich, klar, ohne Bühne. Echter Austausch. Klare Impulse. Konkrete Gedanken für den nächsten Tag.</p>
   <div class="pills">
@@ -115,9 +120,10 @@
   </div>
 </section>
 
+<!-- WAVE -->
 <div class="wave">
   <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path d="M0 48 C360 0 1080 0 1440 48 L1440 0 L0 0 Z" fill="#1a2232"/>
+    <path d="M0 48L60 42.7C120 37.3 240 26.7 360 21.3C480 16 600 16 720 21.3C840 26.7 960 37.3 1080 40C1200 42.7 1320 37.3 1380 34.7L1440 32V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0V48Z" fill="#f4f6f9"/>
   </svg>
 </div>
 
@@ -126,106 +132,180 @@
   <div class="section-inner">
     <h2 class="section-title">Alle Termine 2026 / 2027</h2>
     <p class="section-sub">Wähle deinen Abend – und melde dich direkt an.</p>
+
     <div class="cards">
 
+      <!-- APRIL 2026 -->
       <div class="card">
         <div class="card-month">April 2026</div>
         <div class="card-date">Di, 14. April 2026 · 18:00 – 19:30 Uhr</div>
-        <h3>Delegieren – Warum du immer noch alles selbst machst</h3>
-        <p>Du weißt, dass du loslassen solltest. Und trotzdem landet alles wieder auf deinem Tisch. Dieser Abend zeigt, woran Delegation wirklich scheitert – und was du morgen früh anders machen kannst.</p>
-        <a class="btn" href="https://rainerwinter.zohobackstage.eu/CHEFSACHE-DELEGIEREN260414" target="_blank">Jetzt Platz sichern</a>
+        <h3>Was du sagst ist egal – wie du es sagst entscheidet alles</h3>
+        <p>Du weißt, dass Kommunikation wichtig ist. Und trotzdem entstehen immer wieder Missverständnisse, Reibung und unnötige Konflikte. Dieser Abend zeigt, was scheinbar normale Aussagen tatsächlich bewirken – und wie du Kritik klar und respektvoll auf den Punkt bringst.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Die BABA-Methode: Kritik respektvoll und klar formulieren – eine Technik, die du am nächsten Tag sofort einsetzen kannst.
+        </div>
+        <a href="https://rainerwinter.zohobackstage.eu/CHEFSACHE-DELEGIEREN260414" class="btn">Jetzt Platz sichern</a>
       </div>
 
+      <!-- MAI 2026 -->
       <div class="card">
         <div class="card-month">Mai 2026</div>
         <div class="card-date">Di, 05. Mai 2026 · 18:00 – 19:30 Uhr</div>
-        <h3>Mitdenkende Unternehmenskultur – Wer wartet hier eigentlich auf wen?</h3>
-        <p>Mitarbeitende, die abwarten. Führungskräfte, die alles anschieben. Dieser Abend fragt: Was braucht eine Kultur, damit Menschen wirklich mitdenken?</p>
-        <a class="btn" href="https://rainerwinter.zohobackstage.eu/CHEFSACHEMITDENKEN260505" target="_blank">Jetzt Platz sichern</a>
+        <h3>Mein Team zieht nicht mit – was Führungskräfte in Veränderungen wirklich falsch machen</h3>
+        <p>Veränderung ist Daueraufgabe. Und trotzdem scheitern die meisten Veränderungsvorhaben nicht an der Idee, sondern daran, wie sie eingeführt werden. Dieser Abend macht sichtbar, warum Mitarbeitende blockieren – und was Führungskräfte konkret anders machen können.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Die 3 Faktoren erfolgreicher Veränderung (Notwendigkeit, Fähigkeit, Bereitschaft): Du erkennst sofort, welcher Faktor bei dir gerade fehlt.
+        </div>
+        <a href="https://rainerwinter.zohobackstage.eu/CHEFSACHEMITDENKEN260505" class="btn">Jetzt Platz sichern</a>
       </div>
 
+      <!-- JUNI 2026 -->
       <div class="card">
         <div class="card-month">Juni 2026</div>
         <div class="card-date">Di, 09. Juni 2026 · 18:00 – 19:30 Uhr</div>
-        <h3>Loslassen – Was dich wirklich aufhält</h3>
-        <p>Nicht jede Aufgabe, die du behältst, behältst du aus Überzeugung. Manchmal ist es Gewohnheit, manchmal Angst. Dieser Abend macht den Unterschied sichtbar.</p>
-        <a class="btn" href="https://rainerwinter.zohobackstage.eu/CHEFSACHELOSLASSEN260609" target="_blank">Jetzt Platz sichern</a>
+        <h3>Hochstatus oder Tiefstatus – wie du in jeder Situation die richtige Wirkung erzeugst</h3>
+        <p>Status hat nichts mit Titel oder Gehalt zu tun. Jede Führungskraft sendet ständig Statussignale – bewusst oder unbewusst. Dieser Abend zeigt, was Hoch- und Tiefstatus wirklich bedeuten, wie du deinen Status erkennst und gezielt einsetzen kannst.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Eine Status-Checkliste: Welche Verhaltensweisen signalisieren Hoch- vs. Tiefstatus – und wann ist welcher in der Führung wirksamer.
+        </div>
+        <a href="https://rainerwinter.zohobackstage.eu/CHEFSACHELOSLASSEN260609" class="btn">Jetzt Platz sichern</a>
       </div>
 
+      <!-- JULI 2026 -->
       <div class="card">
         <div class="card-month">Juli 2026</div>
         <div class="card-date">Di, 07. Juli 2026 · 18:00 – 19:30 Uhr</div>
-        <h3>Delegieren – Verantwortung übergeben, ohne die Kontrolle zu verlieren</h3>
-        <p>Delegation ist kein Vertrauensvorschuss ins Blaue. Dieser Abend zeigt, wie du Verantwortung klar übergibst – und trotzdem weißt, was läuft.</p>
-        <a class="btn" href="https://rainerwinter.zohobackstage.eu/CHEFSACHE-DELEGIEREN260707" target="_blank">Jetzt Platz sichern</a>
+        <h3>Entscheidungen treffen ohne ewig zu zweifeln – warum dein Bauch oft klüger ist als du denkst</h3>
+        <p>Führungskräfte treffen täglich Dutzende Entscheidungen. Viele davon werden hinausgezögert, überdacht oder delegiert – nicht weil die Fakten fehlen, sondern weil Entscheidungsmythen im Weg stehen. Dieser Abend räumt damit auf.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Entscheidungsmythen entzaubern + 1 konkretes Modell: Wann Bauchgefühl, wann Analyse – du gehst mit einem klaren Entscheidungsrahmen raus.
+        </div>
+        <a href="https://rainerwinter.zohobackstage.eu/CHEFSACHE-DELEGIEREN260707" class="btn">Jetzt Platz sichern</a>
       </div>
 
+      <!-- AUGUST 2026 -->
       <div class="card">
         <div class="card-month">August 2026</div>
         <div class="card-date">Di, 04. August 2026 · 18:00 – 19:30 Uhr</div>
-        <h3>Mitdenkende Unternehmenskultur – Eigenverantwortung, die wirklich funktioniert</h3>
-        <p>Eigenverantwortung lässt sich nicht anordnen. Dieser Abend zeigt, welche Bedingungen du schaffen musst – und welche du vielleicht gerade verhinderst.</p>
-        <a class="btn" href="https://rainerwinter.zohobackstage.eu/CHEFSACHEMITDENKEN260804" target="_blank">Jetzt Platz sichern</a>
+        <h3>Was wirklich zählt – meine 3 Führungswerte finden und sichtbar machen</h3>
+        <p>Wer keine klaren Werte hat, führt nach Tagesform. Dieser Abend macht deine persönlichen Führungswerte sichtbar – und zeigt, wie du sie in konkrete Verhaltensweisen übersetzt, die dein Team täglich erlebt.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Geführte Übung: Eigene Top-3-Führungswerte identifizieren + je 3 konkrete Verhaltensweisen ableiten – du gehst mit einem persönlichen Werteprofil raus.
+        </div>
+        <a href="https://rainerwinter.zohobackstage.eu/CHEFSACHEMITDENKEN260804" class="btn">Jetzt Platz sichern</a>
       </div>
 
+      <!-- SEPTEMBER 2026 -->
       <div class="card">
         <div class="card-month">September 2026</div>
         <div class="card-date">Di, 01. September 2026 · 18:00 – 19:30 Uhr</div>
-        <h3>Loslassen – Wenn Führung zum Flaschenhals wird</h3>
-        <p>Irgendwann läuft alles über dich. Dieser Abend zeigt, wie du aufhörst, der Engpass in deinem eigenen Unternehmen zu sein.</p>
-        <a class="btn" href="https://rainerwinter.zohobackstage.eu/CHEFSACHELOSLASSEN260901" target="_blank">Jetzt Platz sichern</a>
+        <h3>Führen aus der Mitte – was deine innere Haltung täglich mit deinen Ergebnissen macht</h3>
+        <p>Führung beginnt nicht beim Team. Sie beginnt bei dir. Dieser Abend fragt: In welchem Modus führst du gerade – als Verwalter oder als Gestalter? Und was willst du wirklich erreichen?</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Standortanalyse: Ambitionen, Ziele und Fundamente als Führungskraft reflektieren – du erkennst, was dich gerade antreibt und was dich bremst.
+        </div>
+        <a href="https://rainerwinter.zohobackstage.eu/CHEFSACHELOSLASSEN260901" class="btn">Jetzt Platz sichern</a>
       </div>
 
+      <!-- OKTOBER 2026 -->
       <div class="card">
         <div class="card-month">Oktober 2026</div>
         <div class="card-date">Di, 06. Oktober 2026 · 18:00 – 19:30 Uhr</div>
-        <h3>Delegieren – Die richtigen Aufgaben an die richtigen Menschen</h3>
-        <p>Nicht jeder kann alles. Dieser Abend zeigt, wie du erkennst, wem du was wirklich anvertrauen kannst – und wie du das Gespräch führst.</p>
-        <a class="btn" href="https://rainerwinter.zohobackstage.eu/CHEFSACHE-DELEGIEREN261006" target="_blank">Jetzt Platz sichern</a>
+        <h3>Raus aus dem Hamsterrad – wie ich als Führungskraft strategisch arbeite statt nur zu reagieren</h3>
+        <p>Operative Führung frisst strategisches Denken. Wer immer nur löscht, baut nie vor. Dieser Abend zeigt den Unterschied zwischen den drei Arbeitsebenen – und wie du dir bewusst Raum für das Wesentliche schaffst.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Die 3 Arbeitsebenen (operativ / taktisch / strategisch): Selbstcheck – wo geht deine Führungszeit hin und was musst du sofort anders priorisieren?
+        </div>
+        <a href="https://rainerwinter.zohobackstage.eu/CHEFSACHE-DELEGIEREN261006" class="btn">Jetzt Platz sichern</a>
       </div>
 
+      <!-- NOVEMBER 2026 -->
       <div class="card">
         <div class="card-month">November 2026</div>
         <div class="card-date">Di, 03. November 2026 · 18:00 – 19:30 Uhr</div>
-        <h3>Mitdenkende Unternehmenskultur – Wie Führung Kultur formt</h3>
-        <p>Kultur entsteht nicht durch Leitbilder. Sie entsteht durch das, was du täglich tust und zulässt. Dieser Abend macht sichtbar, welche Signale du sendest.</p>
-        <a class="btn" href="https://rainerwinter.zohobackstage.eu/CHEFSACHEMITDENKEN261103" target="_blank">Jetzt Platz sichern</a>
+        <h3>Warum gute Leute gehen – und was Führungskräfte wirklich dagegen tun können</h3>
+        <p>Mitarbeiterbindung ist kein HR-Thema. Sie passiert täglich – in kleinen Momenten, die du als Führungskraft direkt beeinflussen kannst. Dieser Abend zeigt, was Menschen wirklich hält – und was sie still zur Kündigung treibt.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Die Top-3-Bindungsfaktoren (Vertrauen, Klarheit, Entwicklungsspielraum) – du gehst mit 1 konkreten Maßnahme für dein Team raus.
+        </div>
+        <a href="https://rainerwinter.zohobackstage.eu/CHEFSACHEMITDENKEN261103" class="btn">Jetzt Platz sichern</a>
       </div>
 
+      <!-- DEZEMBER 2026 -->
       <div class="card">
         <div class="card-month">Dezember 2026</div>
         <div class="card-date">Di, 01. Dezember 2026 · 18:00 – 19:30 Uhr</div>
-        <h3>Loslassen – Das Jahr loslassen, das neue beginnen</h3>
-        <p>Was nimmst du mit ins neue Jahr – und was lässt du bewusst zurück? Ein Abend zum Innehalten und Klarmachen, was wirklich zählt.</p>
-        <a class="btn" href="https://rainerwinter.zohobackstage.eu/CHEFSACHELOSLASSEN261201" target="_blank">Jetzt Platz sichern</a>
+        <h3>Was mich stark macht – meine inneren Antreiber kennen und Resilienz gezielt aufbauen</h3>
+        <p>Resilienz ist keine Charaktereigenschaft – sie ist eine Fähigkeit. Dieser Abend zeigt, welche inneren Antreiber dich stärken, welche dich unnötig Energie kosten – und wie du deine persönliche Widerstandskraft gezielt aufbaust.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Selbstreflexion: Eigene Resilienzfaktoren identifizieren – du erkennst, was dich in Krisen stark macht und was dich bremst.
+        </div>
+        <a href="https://rainerwinter.zohobackstage.eu/CHEFSACHELOSLASSEN261201" class="btn">Jetzt Platz sichern</a>
       </div>
 
+      <!-- JANUAR 2027 -->
       <div class="card">
         <div class="card-month">Januar 2027</div>
         <div class="card-date">Di, 12. Januar 2027 · 18:00 – 19:30 Uhr</div>
-        <h3>Delegieren – Neustart mit klaren Strukturen</h3>
-        <p>Ein neues Jahr ist die beste Gelegenheit, alte Muster zu durchbrechen. Delegation von Anfang an richtig aufsetzen – bevor sich wieder alles einschleift.</p>
-        <a class="btn disabled" href="#">Anmeldung folgt</a>
+        <h3>Feedback ist kein Jahresgespräch – warum die besten Führungskräfte täglich Feedback geben</h3>
+        <p>Ohne klare Rückmeldung arbeiten Menschen im Nebel. Gute Leistungen bleiben unsichtbar, Probleme wachsen still. Dieser Abend zeigt, warum Feedback das stärkste Führungswerkzeug ist – und wie du es im Alltag wirklich nutzt.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Die 2 Feedbackformen (informell vs. formell) + 1 Gesprächsstruktur für Kritikgespräche – du verlässt den Abend mit einem konkreten Gesprächsleitfaden.
+        </div>
+        <a href="#" class="btn disabled">Anmeldung folgt</a>
       </div>
 
+      <!-- FEBRUAR 2027 -->
       <div class="card">
         <div class="card-month">Februar 2027</div>
         <div class="card-date">Di, 02. Februar 2027 · 18:00 – 19:30 Uhr</div>
-        <h3>Mitdenkende Unternehmenskultur – Wenn Teams wirklich funktionieren</h3>
-        <p>Was unterscheidet ein Team, das mitdenkt, von einem, das wartet? Was du als Führungskraft konkret tun kannst – heute, nicht irgendwann.</p>
-        <a class="btn disabled" href="#">Anmeldung folgt</a>
+        <h3>Konflikte nicht aussitzen – 1 Gesprächsstruktur die wirklich funktioniert</h3>
+        <p>Konflikte entstehen nicht plötzlich – sie wachsen aus kleinen Spannungen, die zu lange ignoriert wurden. Dieser Abend zeigt, wie du Sach- und Beziehungsebene trennst, Frühwarnsignale erkennst und Konfliktgespräche strukturiert führst.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Die 5-Phasen-Konfliktgesprächsstruktur – du gehst mit einem konkreten Gesprächsrahmen für deinen nächsten schwierigen Fall raus.
+        </div>
+        <a href="#" class="btn disabled">Anmeldung folgt</a>
       </div>
 
+      <!-- MÄRZ 2027 -->
       <div class="card">
         <div class="card-month">März 2027</div>
         <div class="card-date">Di, 02. März 2027 · 18:00 – 19:30 Uhr</div>
-        <h3>Loslassen – Ein Jahr CHEF.Sache: Was bleibt?</h3>
-        <p>Der letzte Abend des Jahres. Die ehrliche Frage: Was hat sich verändert? Was nimmst du mit? Und was fängst du jetzt endlich an?</p>
-        <a class="btn disabled" href="#">Anmeldung folgt</a>
+        <h3>Keine Zeit ist keine Tatsache – sondern eine Entscheidung</h3>
+        <p>Die To-do-Liste wird länger, nicht kürzer. Meetings fressen Konzentration. Unterbrechungen kosten nicht nur die Zeit, die sie dauern – sondern auch die Zeit danach. Dieser Abend macht sichtbar, wo deine Führungszeit wirklich bleibt.</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Mini-Zeitaudit live: Die 5 größten Zeitfresser im Führungsalltag + 1 sofortige Maßnahme für mehr Fokuszeit.
+        </div>
+        <a href="#" class="btn disabled">Anmeldung folgt</a>
       </div>
 
-    </div>
-  </div>
+      <!-- APRIL 2027 -->
+      <div class="card">
+        <div class="card-month">April 2027</div>
+        <div class="card-date">Di, 13. April 2027 · 18:00 – 19:30 Uhr</div>
+        <h3>Culture eats strategy for breakfast – was du als Führungskraft täglich an Kultur prägst, ohne es zu merken</h3>
+        <p>Unternehmenskultur entsteht nicht durch Leitbilder. Sie entsteht durch das, was du täglich tust, zulässt und vorllebst. Dieser Abend schließt den Kreis – und fragt: Was hat sich in deiner Führung verändert?</p>
+        <div class="card-takeaway">
+          <strong>Du nimmst mit</strong>
+          Kulturcheck: Welche Routinen in deinem Bereich prägen gerade die Kultur – positiv oder negativ? Du gehst mit 1 konkreten Kulturhebel raus.
+        </div>
+        <a href="#" class="btn disabled">Anmeldung folgt</a>
+      </div>
+
+    </div><!-- /cards -->
+  </div><!-- /section-inner -->
 </section>
 
 <!-- TRUST BAR -->
@@ -243,7 +323,7 @@
 <section class="cta-band">
   <h2>Lieber erst ein Gespräch?</h2>
   <p>20 Minuten Potenzialgespräch. Nur Klarheit – kein Verkaufsdruck.</p>
-  <a class="btn-white" href="https://zeeg.me/winterfest/Potenzialgespraech" target="_blank">Termin buchen →</a>
+  <a href="https://zeeg.me/winterfest/Potenzialgespraech" class="btn-white">Termin buchen →</a>
 </section>
 
 <!-- FOOTER -->
